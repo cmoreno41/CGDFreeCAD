@@ -4,7 +4,7 @@ A Macro for FreeCAD that allows the user to communicate with Gemini API to produ
 ## Installation
 
 ### Automatic Installation
-1. Download and unzip the GeminiFeedbackCAD package
+1. Download and unzip the GeminiFreeCAD package
 2. Run `install.py` (double-click or run with Python)
 3. The script will automatically copy the macro to your FreeCAD Macro directory
 
