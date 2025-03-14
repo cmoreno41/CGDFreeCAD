@@ -278,6 +278,16 @@
             flex: 1 1 450px;
         }
 
+        .api-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+        }
+
         .placeholder-image {
             background-color: #ddd;
             height: 300px;
@@ -341,6 +351,7 @@
             border-radius: 8px;
             padding: 20px;
             margin-top: 20px;
+            margin-bottom: 25px;
             border-left: 4px solid var(--primary-color);
         }
 
@@ -359,6 +370,17 @@
             justify-content: center;
             border-radius: 8px;
             color: #666;
+        }
+        
+        /* GIF Styling */
+        .workflow-step img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto 0;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         /* Footer */
@@ -440,6 +462,9 @@
             }
             .workflow-step {
                 padding: 25px;
+            }
+            .workflow-step img, .api-image img {
+                max-width: 100%;
             }
         }
     </style>
@@ -561,7 +586,7 @@
                     </div>
                 </div>
                 <div class="api-image">
-                    <img src="https://github.com/cmoreno41/GeminiFreeCAD/blob/main/gemini_api.gif?raw=true" alt="Gemini gif" />
+                    <img src="https://github.com/cmoreno41/GeminiFreeCAD/blob/main/gemini_api.gif?raw=true" alt="Getting Gemini API key" />
                 </div>
             </div>
         </div>
@@ -578,19 +603,20 @@
                     <div class="example-box">
                         <p class="example-text">"Create a modern coffee table with a rectangular glass top and four wooden legs. The table should be 120cm long, 60cm wide, and 45cm tall."</p>
                     </div>
-                    <img src="https://github.com/cmoreno41/GeminiFreeCAD/blob/main/Describe.gif?raw=true" alt="Describe gif" />
+                    <img src="https://github.com/cmoreno41/GeminiFreeCAD/blob/main/Describe.gif?raw=true" alt="Describing a 3D model" />
                 </div>
                 <div class="workflow-step">
                     <h3>Generate</h3>
                     <p>Click the Generate button and watch as Gemini AI creates the initial 3D model based on your description.</p>
-                    <img src="https://github.com/cmoreno41/GeminiFreeCAD/blob/main/generate.gif?raw=true" alt="generate gif" />
+                    <img src="https://github.com/cmoreno41/GeminiFreeCAD/blob/main/generate.gif?raw=true" alt="Generating a 3D model" />
                 </div>
                 <div class="workflow-step">
                     <h3>Refine</h3>
                     <p>Provide feedback to improve specific aspects of the model, and the AI will update it accordingly.</p>
                     <div class="example-box">
-                    <p class="example-text">"Make the table 240cm long, 120cm wide, and 90 cm tall"</p>
-                    <img src="https://github.com/cmoreno41/GeminiFreeCAD/blob/main/improve.gif" alt="generate gif" />
+                        <p class="example-text">"Make the table 240cm long, 120cm wide, and 90 cm tall"</p>
+                    </div>
+                    <img src="https://github.com/cmoreno41/GeminiFreeCAD/blob/main/improve.gif?raw=true" alt="Refining a 3D model" />
                 </div>
             </div>
         </div>
