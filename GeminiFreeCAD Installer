@@ -17,12 +17,12 @@ def find_freecad_macro_path() -> str:
         return ""
 
 def install_macro():
-    source_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "GeminiFeedbackCAD.FCMacro")
+    source_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "GeminiFreeCAD.FCMacro")
     macro_path = find_freecad_macro_path()
     
     if not macro_path:
         print("Couldn't determine FreeCAD Macro path for your system.")
-        print("Please manually copy GeminiFeedbackCAD.FCMacro to your FreeCAD Macro directory.")
+        print("Please manually copy GeminiFreeCAD.FCMacro to your FreeCAD Macro directory.")
         return False
     
     if not os.path.exists(macro_path):
@@ -33,7 +33,7 @@ def install_macro():
             print(f"Error creating Macro directory: {e}")
             return False
     
-    destination = os.path.join(macro_path, "GeminiFeedbackCAD.FCMacro")
+    destination = os.path.join(macro_path, "GeminiFreeCAD.FCMacro")
     
     try:
         shutil.copy2(source_file, destination)
@@ -44,7 +44,7 @@ def install_macro():
         return False
 
 if __name__ == "__main__":
-    print("GeminiFeedbackCAD Installer")
+    print("GeminiFreeCAD Installer")
     print("===========================")
     
     success = install_macro()
@@ -54,6 +54,6 @@ if __name__ == "__main__":
         print("You can now run the macro from FreeCAD's Macro menu.")
     else:
         print("\nInstallation failed.")
-        print("Please try manually copying GeminiFeedbackCAD.FCMacro to your FreeCAD Macro directory.")
+        print("Please try manually copying GeminiFreeCAD.FCMacro to your FreeCAD Macro directory.")
     
     input("\nPress Enter to exit...")
