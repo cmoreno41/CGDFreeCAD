@@ -39,5 +39,16 @@ If automatic installation fails:
 - FreeCAD 1.0.0 or newer
 - Google Cloud API key with Gemini API access
 
+## No Download WebPage Interface: https://txt2cad.streamlit.app/
+This is an alternative to downloading the FreeCad Macro gemini interface. In this webpage we write all prompts and feedback to a MongoDB database with the hopes of fine-tuning an LLM for CAD generation in the future. All code must be copied from the webpage to a FreeCAD macro.
+
+Outline for the app:
+1. Optional: Select a generative model
+2. Optional: Enter your own Google AI Studio API key below or use our shared API key. Our shared API key will be subject to rate limitiations with all other webpage users.
+3. Provide specifciations for a CAD model to the LLM assistant in the box below (e.g. Scandanavian Table) then click 'Generate Code'. The generated code can then be pasted in a FreeCAD Macro and executed. 
+4. Paste the generated code in a FreeCAD Macro and execute.
+5. Provide revision feedback to the AI agent to improve or modify the original code.
+6. Keep revising (5) or refresh and generate a new design.
+
 ## License
 [MIT License](LICENSE)
