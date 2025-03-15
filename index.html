@@ -138,7 +138,23 @@
             color: var(--primary-color);
             transform: translateY(-3px);
         }
+        .web-app-alternative-button {
+            display: inline-block;
+            border: 2px solid white;
+            color: white;
+            padding: 13px 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
 
+        .web-app-alternative-button:hover {
+            background-color: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
         /* Sections */
         section {
             padding: 80px 0;
@@ -469,7 +485,7 @@
             }
         }
 
-        /* Streamlit App Section Styles */
+        /* Web App Section Styles */
         .streamlit-app {
             background-color: #f8f9fa;
             padding: 60px 0;
@@ -547,7 +563,7 @@
                 <a href="#installation">Install</a>
                 <a href="#api-key">API Key</a>
                 <a href="#how-it-works">How It Works</a>
-                <a href="#streamlit-app">Streamlit App</a>
+                <a href="#streamlit-app">Web App</a>
             </div>
         </div>
     </nav>
@@ -560,6 +576,7 @@
             <div class="cta-buttons">
                 <a href="GeminiFreeCAD.zip" class="download-button">Download Now</a>
                 <a href="#how-it-works" class="secondary-button">See How It Works</a>
+                <a href="#streamlit-app" class="web-app-alternative-button">Web App Alternative</a> <!-- Added button -->
             </div>
         </div>
     </header>
@@ -691,7 +708,7 @@
         </div>
     </section>
 
-    <!-- Streamlit App Section -->
+    <!-- Web App Section -->
     <section id="streamlit-app" class="streamlit-app">
         <div class="container">
             <h2>Alternative: Use Streamlit with our shared Google API (No Downloads Required)</h2>
@@ -707,7 +724,7 @@
             </ul>
             <p>
                 <a href="https://txt2cad.streamlit.app/" target="_blank" class="streamlit-link">Try the txt2cad
-                    Streamlit App →</a>
+                    Web App →</a>
             </p>
             <div class="api-image">
                 <img src="https://raw.githubusercontent.com/cmoreno41/GeminiFreeCAD/refs/heads/main/streamlit_gif.gif" alt="Streamlit Example" />
