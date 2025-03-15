@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeminiFreeCAD - AI-Powered 3D Modeling</title>
     <style>
-        :root {
+        /* ... (Your existing CSS styles -  No changes needed here) ... */
+         :root {
             --primary-color: #3498db;
             --secondary-color: #2ecc71;
             --dark-color: #2c3e50;
@@ -467,6 +468,73 @@
                 max-width: 100%;
             }
         }
+
+        /* Streamlit App Section Styles */
+        .streamlit-app {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .streamlit-app h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: var(--dark-color);
+        }
+
+        .streamlit-app p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .streamlit-app ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        .streamlit-app li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .streamlit-app li::before{
+            content: "✓";
+            color: var(--secondary-color);
+            margin-right: 15px;
+            font-weight: bold;
+
+        }
+
+        .streamlit-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 32px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .streamlit-link:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .streamlit-app h2::after{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -479,6 +547,7 @@
                 <a href="#installation">Install</a>
                 <a href="#api-key">API Key</a>
                 <a href="#how-it-works">How It Works</a>
+                <a href="#streamlit-app">Streamlit App</a>
             </div>
         </div>
     </nav>
@@ -562,7 +631,7 @@
                     <div class="step-content">
                         <h3>Use</h3>
                         <p>Select GeminiFreeCAD and then select execute</p>
-                </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -619,6 +688,27 @@
                     <img src="https://github.com/cmoreno41/GeminiFreeCAD/blob/main/improve.gif?raw=true" alt="Refining a 3D model" />
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Streamlit App Section -->
+    <section id="streamlit-app" class="streamlit-app">
+        <div class="container">
+            <h2>Alternative: Use Our Shared Google API (No Downloads Required)</h2>
+            <p>
+                If you don't want to set up your own Google API key or download the FreeCAD macro, you can use our
+                shared Google API through a convenient web interface. This alternative option requires
+                no additional downloads or installations. We will collect requests on this site in a MongoDB Database to improve a future LLM with fine-tuning.
+            </p>
+            <ul>
+                <li><strong>No Google API Key Needed:</strong> Use our shared key, saving you the setup.</li>
+                <li><strong>No Python Download:</strong> Avoid downloading and copy directly from the webpage to a FreeCAD Macro.</li>
+                <li><strong>Easy to Use:</strong> A simple web interface handles everything for you.</li>
+            </ul>
+            <p>
+                <a href="https://txt2cad.streamlit.app/" target="_blank" class="streamlit-link">Try the txt2cad
+                    Streamlit App →</a>
+            </p>
         </div>
     </section>
 
